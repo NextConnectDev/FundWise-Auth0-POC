@@ -8,9 +8,9 @@ export default async function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={styles.ctas}>
-          {!!session
-            ? <p>Logged in as {session.user.email}</p>
-            : <a href="/auth/login" className={styles.primary}>Log in with Auth0</a>
+          {!session
+            ? <a href="/auth/login" className={styles.primary}>Log in with Auth0</a>
+            : <p>Logged in as {session.user.email}</p>
           }
         </div>
       </main>
