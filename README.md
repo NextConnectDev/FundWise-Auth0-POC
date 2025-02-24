@@ -9,9 +9,9 @@ To try this POC, install this repo locally and set the following environment var
 | Environment variablen | Description                                                                                                   |
 | --------------------- | ------------------------------------------------------------------------------------------------------------- |
 | APP_BASE_URL          | The base URL of your website, starting with https://, without trailing slash                                  |
-| FUNDWISE_BASE_URL     | The base URL of FundWise, starting with https://, without trailing slash                                      |
-| ORGANIZATION_ID       | Your FundWise Organization ID                                                                                 |
-| AUTH0_SECRET          | A secret key used by Auth0 to encrypt/decrypt token, can be generated for example with `openssl rand -hex 32` |
+| FUNDWISE_BASE_URL     | The base URL of FundWise, e.g. https://data.connectid.nl                                                      |
+| ORGANIZATION_ID       | Your FundWise Organization ID, found in the FundWise backoffice                                               |
+| AUTH0_SECRET          | A secret key used by Auth0 to encrypt/decrypt token, can be generated with `openssl rand -hex 32` for example |
 | AUTH0_DOMAIN          | The base domain of Auth0                                                                                      |
-| AUTH0_CLIENT_ID       | The client ID of the Auth0 application                                                                        |
-| AUTH0_CLIENT_SECRET   | The client secret of the Auth0 application                                                                    |
+| AUTH0_CLIENT_ID       | The client ID of the Auth0 application, found in the FundWise backoffice                                      |
+| AUTH0_CLIENT_SECRET   | The client secret of the Auth0 application, found in the FundWise backoffice                                  |
