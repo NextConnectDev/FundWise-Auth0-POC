@@ -27,8 +27,6 @@ export async function GET(request: Request, props: { params: Promise<{ args: str
       headers: token ? {
         //Send the access token as a Bearer token in the header
         Authorization: `Bearer ${token}`,
-        //Set the organization ID as x-organization-id in the header
-        'x-organization-id': process.env.ORGANIZATION_ID,
       } : undefined,
     });
 
